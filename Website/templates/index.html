@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gender Detector | Manish</title>
+    <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+    <div class="hero-container">
+        <div class="heading">
+            <h1>Gender Detector</h1>
+        </div>
+        <div class="form-container">
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" id="imageUpload">
+                <input type="submit" value="Check Gender">
+            </form>
+        </div>
+        <div class="result">
+            {% if result %}
+            <div class="ImageContainer">
+                <img src="{{fname}}" alt="Uploaded Image">
+            </div>
+            <div class = "resultContainer">
+                <p>Result : {{ result }}</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
+

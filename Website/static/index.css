@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Hammersmith+One&family=Laila&family=Ysabeau+Office&family=Ysabeau+SC&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url('./opoy7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 75vh;
+    width: 100vw;
+}
+.heading{
+    font-family: 'Hammersmith One';
+    position: relative;
+    font-size: 2rem;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+}
+.ImageContainer img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#imageUpload{
+    width: 20em;
+    border-radius: 3px;
+}
+#imageUpload:hover{
+    cursor: pointer;
+}
+form > input[type = 'submit']:hover{
+    cursor: pointer;
+}
